@@ -26,7 +26,7 @@
     when: software_raid_devices is defined
 
   - name: software raid - create mdadm config file
-    template: src=mdadm.conf.j2 dest=/etc/mdadm/mdadm.conf
+    template: src=mdadm.conf.j2 dest=/etc/mdadm.conf
     when: software_raid_devices is defined
 
   - name: software raid - update initramfs
